@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar app</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="./resources/js/script.js" defer></script>
 </head>
 <body>
     
     <div id="calendar">
 
         <div class="yearDisplay" >
-            <button class="yearChange" data-year-change="-1">&lt;-</button>
+            <button class="yearChange" data-year-change="-1">&lt;</button>
             <div data-year-display></div>
-            <button class="yearChange" data-year-change="1">-&gt;</button>
+            <button class="yearChange" data-year-change="1">&gt;</button>
         </div>
 
         <div class="monthDisplay">
-            <button class="monthChange" data-month-change="-1">&lt;-</button>
+            <button class="monthChange" data-month-change="-1">&lt;</button>
             <div data-month-display></div>
-            <button class="monthChange" data-month-change="1">-&gt;</button>
+            <button class="monthChange" data-month-change="1">&gt;</button>
             </div>
 
         <div class="weekdays">
@@ -35,6 +35,51 @@
         </div>
         <div class="dayContainer" data-day-container>
 
+        </div>
+    </div>
+
+    <div id="noteEditor"> 
+        <div class="noteEditorHeader">
+            <p>Note editor</p>
+            <p id="dateDisplay"></p>
+        </div>
+        <textarea id="noteEditorTextarea">
+        </textarea>
+        <div class="noteEditorButtons">
+            <button id="editorSaveBtn">Save note</button>
+            <button id="editorExitBtn">Exit</button>
+        </div>
+        
+        <div class="colorPicker">
+            <label class="color">
+                <input type="radio" name="color" value="#ff0000" checked>
+                <span data-color="#ff0000"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#ff6600">
+                <span data-color="#ff6600"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#ffff00">
+                <span data-color="#ffff00"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#00cc00">
+                <span data-color="#00cc00"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#0099ff">
+                <span data-color="#0099ff"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#0000ff">
+                <span data-color="#0000ff"></span>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#9900ff">
+                <span data-color="#9900ff"></span>
+            </label>
+        
         </div>
     </div>
 </body>
